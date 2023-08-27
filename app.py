@@ -5,8 +5,9 @@ import pickle
 
 # Load the data
 df = pd.read_csv('merged_data11.csv')
-with open("model.pkl", "rb") as f:
-    model = pickle.load(f)
+# with open("model.pkl", "rb") as f:
+#     model = pickle.load(f)
+model=pickle.load(open('model.pkl','rb'))
 
 # Initialize LabelEncoder for 'Location'
 label_encoder = LabelEncoder()
